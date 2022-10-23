@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Nabla&family=Roboto:wght@100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    background:radial-gradient(farthest-corner at 50% 80px,#1f3756, #141539);
+}
+
+header{
+    min-height: 140px;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 30px;
+    border: 2px solid grey;
+    border-radius: 15px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.name{
+    color: #ffff;
+    font-size: 30px;
+    font-weight: 800;
+    font-family: 'Barlow Semi Condensed';
+}
+
+.score{
+    height: 100px;
+    width: 100px;
+    background-color: #ffff;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.score p{
+    color: hsl(229, 64%, 46%);
+}
+
+.score span{
+    color: hsl(229, 25%, 31%);
+    font-size: 50px;
+    font-weight: 700;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: auto;
+}
+
+.choose{
+    /* border: 2px solid red; */
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#triangle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -2;
+}
+
+.circles{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.circles div{
+    display: flex;
+    flex-basis: 50%;
+    height: 175px;
+    /* border: 2px solid green; */
+}
+
+.circles img{
+    box-sizing: content-box;
+    height: 40px;
+    width: 40px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 50%;
+}
+
+#paper{
+    justify-content: start;
+}
+
+#scissors{
+    justify-content: end;
+}
+
+#rock{
+    justify-content: center;
+    align-items: flex-end;
+}
+
+
+#paper img{
+    border: 20px solid blue;
+}
+
+#scissors img{
+    border: 20px solid yellow;
+
+}
+
+#rock img{
+    border: 20px solid red;
+}
+
+@media(max-width:800px){
+    header{
+        margin-top: 10px;
+    }
+    .choose{
+        width: 310px;
+        height: 300px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #triangle{
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -2;
+    }
+
+    .circles {
+    }
+
+    #paper{
+        justify-content: start;
+        align-items: center;
+    }
+    
+    #scissors{
+        justify-content: end;
+        align-items: center;
+    }
+    
+    #rock{
+        justify-content: center;
+        align-items: flex-end;
+    }
+}
+
+@media(max-width:450px){
+    header{
+        width: 90%;
+    }
+}
