@@ -120,18 +120,72 @@ main{
 
 
 #paper img{
-    border: 20px solid blue;
+    border: 20px solid hsl(230, 89%, 62%);
 }
 
 #scissors img{
-    border: 20px solid yellow;
+    border: 20px solid hsl(39, 89%, 49%) ;
 
 }
 
 #rock img{
-    border: 20px solid red;
+    border: 20px solid hsl(349, 71%, 52%) ;
 }
 
+.rules{
+    cursor: pointer;
+    position: absolute;
+    right: 50px;
+    bottom: 30px;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+.container__rules{
+    display: none;
+}
+
+.container__rules.active{
+    min-height: 300px;
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 11111111110;
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+
+.container__rules p{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.container__rules img{
+    cursor: pointer;
+}
+
+.blur{
+    display: none;
+}
+
+.blur.active{
+    display: block;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(124, 118, 118, 0.151);
+    position: absolute;
+    opacity: 0.6;
+    z-index: 8;
+}
 @media(max-width:800px){
     header{
         margin-top: 10px;
