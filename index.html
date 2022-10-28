@@ -19,27 +19,27 @@
         </div>
         <div class="score">
             <p>Score</p>
-            <span>12</span>
+            <span id="score"></span>
         </div>
     </header>
     <main>
         <div class="choose">
             <img id="triangle" src="./images/bg-triangle.svg" alt="">
             <div class="circles">
-                <div class="circle" id="paper">
+                <div class="circle" onclick="choose(1)"  id="paper">
                     <img src="./images/icon-paper.svg" alt="">
                 </div>
-                <div class="circle" id="scissors">
+                <div class="circle" onclick="choose(2)"  id="scissors">
                     <img src="./images/icon-scissors.svg" alt="">
                 </div>
-                <div class="circle" id="rock">
+                <div class="circle" onclick="choose(3)" id="rock">
                     <img src="./images/icon-rock.svg" alt="">
                 </div>
             </div>
         </div>
-        <div class="rules">
+       <div class="rules">
             Rules
-        </div>
+        </div> 
     </main>
 
     <div class="container__rules">
